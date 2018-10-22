@@ -632,6 +632,20 @@ class Permission extends BaseOauthController {
                 throw new Exception('参数错误');
             }
             else{
+                //查找是否有管理员使用这个角色则提示不能删除
+                $admins = Db::name('admin')->column('role_ids');
+
+                $is_setting = false;
+                foreach ($admins as $key=>$value){
+                    if(in_array($param['id'],explode(',',$value))){
+                        $is_setting = true;
+                        break;
+                    }
+                }
+                if($is_setting){
+                    $code = 2;
+                    throw new Exception('有管理员设置了这个角色，不能被删除');
+                }
                 Db::name('permission_role')
                     ->where(['id'=>$param['id']])
                     ->delete();
