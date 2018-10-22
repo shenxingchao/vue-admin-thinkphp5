@@ -19,7 +19,7 @@
 3.npm install 初始化项目<br>
 4.配置vuestage\config\index.js  配置node服务器 host和port<br>
 5.开发环境下 配置 vuestage\config\dev.env.js BASE_API为API请求路径前缀
-6.生成环境 配置 vuestage\config\dev.env.js
+6.生产环境 配置 vuestage\config\dev.env.js
 ~~~
 
 ##视频演示
