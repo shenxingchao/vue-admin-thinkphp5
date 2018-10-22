@@ -1,1 +1,1 @@
-# gitvueadmin
+# vueadmin 基于vue-admin-template+thinkphp5的后台权限管理系统
