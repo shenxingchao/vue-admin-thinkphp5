@@ -33,16 +33,16 @@
   并启动web服务器<br>
   进入后台界面登录界面<br>
   超级管理员账号密码为super  123456<br>
-  ![图片](https://github.com/shenxingchao/vue-admin-thinkphp/blob/master/images/opt1.png)<br>
+  ![图片](https://github.com/shenxingchao/vue-admin-thinkphp/blob/master/images/opt1.png?v=1)<br>
 ### 2.添加菜单路由配置
   将管理员作为二级菜单添加到权限管理菜单下 如下图<br>
-  ![图片](https://github.com/shenxingchao/vue-admin-thinkphp/blob/master/images/opt2.png)<br>
-  ![图片](https://github.com/shenxingchao/vue-admin-thinkphp/blob/master/images/opt3.png)<br>
+  ![图片](https://github.com/shenxingchao/vue-admin-thinkphp/blob/master/images/opt2.png?v=1)<br>
+  ![图片](https://github.com/shenxingchao/vue-admin-thinkphp/blob/master/images/opt3.png?v=1)<br>
   依次添加  管理员列表，添加管理员，编辑管理员 路由配置，<br>
   菜单资源配置就是有页面的路由 如添加页面，编辑页面，列表页面等，（不包括操作页面，如删除操作）<br>
   svg图标则是从iconfront上下载下来的，保存到vuestage\src\icons\svg\文件夹下，自己命名即可，这里命名为admin.svg<br>
   如下图，(即是后台图标配置名称)<br>
-  ![图片](https://github.com/shenxingchao/vue-admin-thinkphp/blob/master/images/svg.png)<br>
+  ![图片](https://github.com/shenxingchao/vue-admin-thinkphp/blob/master/images/svg.png?v=1)<br>
 ### 3.创建视图文件
   分别创建<br>
   admin.vue<br>
@@ -50,24 +50,24 @@
   admin_edit.vue<br>
   admin_lst.vue<br>
   创建前端视图页面<br>
-  ![图片](https://github.com/shenxingchao/vue-admin-thinkphp/blob/master/images/opt4.png)<br>
+  ![图片](https://github.com/shenxingchao/vue-admin-thinkphp/blob/master/images/opt4.png?v=1)<br>
   (需要注意的是必须创建admin.vue空视图页面)<br>
 ### 4.配置路由映射视图文件（重要）
   找到vuestage\src\router\map.js  路由映射文件<br>
   如下图配置<br>
-  ![图片](https://github.com/shenxingchao/vue-admin-thinkphp/blob/master/images/routermap.png)<br>
+  ![图片](https://github.com/shenxingchao/vue-admin-thinkphp/blob/master/images/routermap.png?v=1)<br>
 ### 5.创建后端api接口文件
   找到vuestage\src\api\permission\  新建admin.js<br>
   如下图<br>
-  ![图片](https://github.com/shenxingchao/vue-admin-thinkphp/blob/master/images/api.png)<br>
+  ![图片](https://github.com/shenxingchao/vue-admin-thinkphp/blob/master/images/api.png?v=1)<br>
 ### 6.控制增删改查数据库操作权限
   上面的只能是控制页面的显示，并不能控制后端请求权限,那么怎么办呢<br>
   重新打开我们的后台，添加权限资源如下图<br>
-  ![图片](https://github.com/shenxingchao/vue-admin-thinkphp/blob/master/images/src.png)<br>
+  ![图片](https://github.com/shenxingchao/vue-admin-thinkphp/blob/master/images/src.png?v=1)<br>
 ### 7.配置角色权限
   最后在角色列表中配置相关的视图可视权限和后台请求操作权限即可<br>
   如下图所示<br>
-  ![图片](https://github.com/shenxingchao/vue-admin-thinkphp/blob/master/images/role.png)<br>
+  ![图片](https://github.com/shenxingchao/vue-admin-thinkphp/blob/master/images/role.png?v=1)<br>
 ### 8.ps
 以上可能有许多不完善的地方，欢迎提问和批评
 
