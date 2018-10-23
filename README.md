@@ -40,8 +40,8 @@
   ![图片](https://github.com/shenxingchao/vue-admin-thinkphp/blob/master/images/opt3.png)<br>
   依次添加  管理员列表，添加管理员，编辑管理员 路由配置，<br>
   菜单资源配置就是有页面的路由 如添加页面，编辑页面，列表页面等，（不包括操作页面，如删除操作）<br>
-  svg图标则是从iconfront上下载下来的，保存到vuestage\src\icons\svg\文件夹下，自己命名即可，这里命名为admin.svg
-  入下图，(即是后台图标配置名称)
+  svg图标则是从iconfront上下载下来的，保存到vuestage\src\icons\svg\文件夹下，自己命名即可，这里命名为admin.svg<br>
+  如下图，(即是后台图标配置名称)<br>
   ![图片](https://github.com/shenxingchao/vue-admin-thinkphp/blob/master/images/svg.png)<br>
 ### 3.创建视图文件
   分别创建<br>
@@ -49,7 +49,7 @@
   admin_add.vue<br>
   admin_edit<br>
   vueadmin_lst.vue<br>
-  创建前端视图页面如下<br>
+  创建前端视图页面如下图<br>
   ![图片](https://github.com/shenxingchao/vue-admin-thinkphp/blob/master/images/opt4.png)<br>
   (需要注意的是必须创建admin.vue空视图页面)<br>
 ### 4.配置路由映射视图文件（重要）
