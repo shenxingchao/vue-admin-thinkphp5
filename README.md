@@ -27,7 +27,7 @@
 链接：[点我查看演示视频](http://www.o8o8o8.com/vue/demo.html)
 
 ## 开发简易教程（大神绕道）
-以管理员增删改查为例(已经成功运行项目基础上，上面已经介绍了怎么搭建)<br><br>
+以管理员增删改查为例(已经成功运行项目基础上，上面已经介绍了怎么搭建)<br>
 ### 1.登录
   首先命令行进入vuestage目录，执行npm run dev运行客户端<br>
   并启动web服务器<br>
@@ -47,9 +47,9 @@
   分别创建<br>
   admin.vue<br>
   admin_add.vue<br>
-  admin_edit<br>
-  vueadmin_lst.vue<br>
-  创建前端视图页面如下图<br>
+  admin_edit.vue<br>
+  admin_lst.vue<br>
+  创建前端视图页面<br>
   ![图片](https://github.com/shenxingchao/vue-admin-thinkphp/blob/master/images/opt4.png)<br>
   (需要注意的是必须创建admin.vue空视图页面)<br>
 ### 4.配置路由映射视图文件（重要）
@@ -57,6 +57,7 @@
   如下图配置<br>
   ![图片](https://github.com/shenxingchao/vue-admin-thinkphp/blob/master/images/routermap.png)<br>
 ### 5.创建后端api接口文件
+  找到vuestage\src\api\permission\  新建admin.js<br>
   如下图<br>
   ![图片](https://github.com/shenxingchao/vue-admin-thinkphp/blob/master/images/api.png)<br>
 ### 6.控制增删改查数据库操作权限
