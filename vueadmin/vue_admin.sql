@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50553
 File Encoding         : 65001
 
-Date: 2018-10-22 10:51:42
+Date: 2018-10-25 08:20:58
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -33,7 +33,7 @@ CREATE TABLE `vue_admin` (
 -- Records of vue_admin
 -- ----------------------------
 INSERT INTO `vue_admin` VALUES ('3', 'admin', '96e79218965eb72c92a549dd5a330112', '4,9', '', '0');
-INSERT INTO `vue_admin` VALUES ('2', 'super', 'e10adc3949ba59abbe56e057f20f883e', '3', '', '0');
+INSERT INTO `vue_admin` VALUES ('2', 'super', 'e10adc3949ba59abbe56e057f20f883e', '3', '06d206faaca10dd88cd63a9d25854831', '1540513138');
 
 -- ----------------------------
 -- Table structure for vue_permission_menu
@@ -87,7 +87,7 @@ CREATE TABLE `vue_permission_role` (
   `permission_src_ids` text NOT NULL COMMENT '权限id字符串',
   `temp_src_ids` text NOT NULL COMMENT '选中状态的id（不包含半选中id）',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=12 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of vue_permission_role
