@@ -5,6 +5,7 @@
 ## 目录介绍
 1.vuestage  前端项目文件<br>
 2.vueadmin  后端项目文件
+3.sql链接：https://pan.baidu.com/s/1gOGBQl9U6mCuPoTxNyCprQ 密码：star后留下邮箱获取（防止伸手党）
 
 ## 如何使用
 ### 后端项目搭建
