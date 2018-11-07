@@ -783,3 +783,2235 @@
 [ sql ] [ SQL ] SHOW COLUMNS FROM `vue_permission_role` [ RunTime:0.021860s ]
 [ sql ] [ SQL ] SELECT `role_name` FROM `vue_permission_role` WHERE  `id` IN (4,9) [ RunTime:0.000422s ]
 [ sql ] [ SQL ] SELECT `role_name` FROM `vue_permission_role` WHERE  `id` IN (3) [ RunTime:0.000262s ]
+---------------------------------------------------------------
+[ 2018-11-02T11:48:18+08:00 ] 127.0.0.1 GET www.vue-admin-thinkphp.com/index.php/admin/uc/info
+[运行时间：0.081183s] [吞吐率：12.32req/s] [内存消耗：2,399.64kb] [文件加载：48]
+[ info ] [ LANG ] D:\PHP\git\vue-admin-thinkphp\vueadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'uc',
+    2 => 'info',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.vue-admin-thinkphp.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:9090',
+  'x-token' => 't8fdad26ac86f667380fe52b6afaf46da',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://localhost:9090/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Uc->info[ D:\PHP\git\vue-admin-thinkphp\vueadmin\application\admin\controller\Uc.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001134s ] mysql:host=127.0.0.1;port=3306;dbname=vueadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_admin` [ RunTime:0.034385s ]
+[ sql ] [ SQL ] SELECT `expire_time`,`id`,`token` FROM `vue_admin` WHERE  `token` = '8fdad26ac86f667380fe52b6afaf46da' LIMIT 1 [ RunTime:0.000328s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_permission_src` [ RunTime:0.018833s ]
+[ sql ] [ SQL ] SELECT * FROM `vue_permission_src` WHERE  `permission_code` <> '' [ RunTime:0.000337s ]
+[ sql ] [ SQL ] SELECT * FROM `vue_admin` WHERE  `token` = '8fdad26ac86f667380fe52b6afaf46da' LIMIT 1 [ RunTime:0.000283s ]
+---------------------------------------------------------------
+[ 2018-11-02T11:48:18+08:00 ] 127.0.0.1 POST www.vue-admin-thinkphp.com/index.php/admin/uc/getPermissionRouter?roles[]=3
+[运行时间：0.090019s] [吞吐率：11.11req/s] [内存消耗：2,471.95kb] [文件加载：48]
+[ info ] [ LANG ] D:\PHP\git\vue-admin-thinkphp\vueadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'uc',
+    2 => 'getPermissionRouter',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.vue-admin-thinkphp.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:9090',
+  'x-token' => 't8fdad26ac86f667380fe52b6afaf46da',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://localhost:9090/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'roles' => 
+  array (
+    0 => '3',
+  ),
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Uc->getPermissionRouter[ D:\PHP\git\vue-admin-thinkphp\vueadmin\application\admin\controller\Uc.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010097s ] mysql:host=127.0.0.1;port=3306;dbname=vueadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_admin` [ RunTime:0.013499s ]
+[ sql ] [ SQL ] SELECT `expire_time`,`id`,`token` FROM `vue_admin` WHERE  `token` = '8fdad26ac86f667380fe52b6afaf46da' LIMIT 1 [ RunTime:0.000299s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_permission_src` [ RunTime:0.013603s ]
+[ sql ] [ SQL ] SELECT * FROM `vue_permission_src` WHERE  `permission_code` <> '' [ RunTime:0.000356s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_permission_role` [ RunTime:0.015472s ]
+[ sql ] [ SQL ] SELECT * FROM `vue_permission_role` WHERE  `id` IN (3) [ RunTime:0.000290s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_permission_menu` [ RunTime:0.015164s ]
+[ sql ] [ SQL ] SELECT * FROM `vue_permission_menu` WHERE  `id` IN (1,3,2,24,25,26,27,8,9,10,15,17,18,19,20,28,29,30,31) [ RunTime:0.000452s ]
+---------------------------------------------------------------
+[ 2018-11-02T11:48:20+08:00 ] 127.0.0.1 GET www.vue-admin-thinkphp.com/index.php/admin/permission/permissionSrcLst
+[运行时间：0.079716s] [吞吐率：12.54req/s] [内存消耗：2,581.37kb] [文件加载：48]
+[ info ] [ LANG ] D:\PHP\git\vue-admin-thinkphp\vueadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'permission',
+    2 => 'permissionSrcLst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.vue-admin-thinkphp.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:9090',
+  'x-token' => 't8fdad26ac86f667380fe52b6afaf46da',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://localhost:9090/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Permission->permissionSrcLst[ D:\PHP\git\vue-admin-thinkphp\vueadmin\application\admin\controller\Permission.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010202s ] mysql:host=127.0.0.1;port=3306;dbname=vueadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_admin` [ RunTime:0.022209s ]
+[ sql ] [ SQL ] SELECT `expire_time`,`id`,`token` FROM `vue_admin` WHERE  `token` = '8fdad26ac86f667380fe52b6afaf46da' LIMIT 1 [ RunTime:0.000313s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_permission_src` [ RunTime:0.018384s ]
+[ sql ] [ SQL ] SELECT * FROM `vue_permission_src` WHERE  `permission_code` <> '' [ RunTime:0.000480s ]
+[ sql ] [ SQL ] SELECT * FROM `vue_permission_src` [ RunTime:0.000341s ]
+---------------------------------------------------------------
+[ 2018-11-02T11:48:20+08:00 ] 127.0.0.1 GET www.vue-admin-thinkphp.com/index.php/admin/permission/permissionMenuLst
+[运行时间：0.084538s] [吞吐率：11.83req/s] [内存消耗：2,608.38kb] [文件加载：48]
+[ info ] [ LANG ] D:\PHP\git\vue-admin-thinkphp\vueadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'permission',
+    2 => 'permissionMenuLst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.vue-admin-thinkphp.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:9090',
+  'x-token' => 't8fdad26ac86f667380fe52b6afaf46da',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://localhost:9090/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Permission->permissionMenuLst[ D:\PHP\git\vue-admin-thinkphp\vueadmin\application\admin\controller\Permission.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010180s ] mysql:host=127.0.0.1;port=3306;dbname=vueadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_admin` [ RunTime:0.016230s ]
+[ sql ] [ SQL ] SELECT `expire_time`,`id`,`token` FROM `vue_admin` WHERE  `token` = '8fdad26ac86f667380fe52b6afaf46da' LIMIT 1 [ RunTime:0.000283s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_permission_src` [ RunTime:0.014924s ]
+[ sql ] [ SQL ] SELECT * FROM `vue_permission_src` WHERE  `permission_code` <> '' [ RunTime:0.000355s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_permission_menu` [ RunTime:0.018823s ]
+[ sql ] [ SQL ] SELECT * FROM `vue_permission_menu` [ RunTime:0.000382s ]
+---------------------------------------------------------------
+[ 2018-11-02T11:48:21+08:00 ] 127.0.0.1 GET www.vue-admin-thinkphp.com/index.php/admin/permission/permissionRoleLst?page=1&total=0&pageSize=10&role_name=
+[运行时间：0.123787s] [吞吐率：8.08req/s] [内存消耗：2,703.53kb] [文件加载：52]
+[ info ] [ LANG ] D:\PHP\git\vue-admin-thinkphp\vueadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'permission',
+    2 => 'permissionRoleLst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.vue-admin-thinkphp.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:9090',
+  'x-token' => 't8fdad26ac86f667380fe52b6afaf46da',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://localhost:9090/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'total' => '0',
+  'pageSize' => '10',
+  'role_name' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Permission->permissionRoleLst[ D:\PHP\git\vue-admin-thinkphp\vueadmin\application\admin\controller\Permission.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010100s ] mysql:host=127.0.0.1;port=3306;dbname=vueadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_admin` [ RunTime:0.023370s ]
+[ sql ] [ SQL ] SELECT `expire_time`,`id`,`token` FROM `vue_admin` WHERE  `token` = '8fdad26ac86f667380fe52b6afaf46da' LIMIT 1 [ RunTime:0.000326s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_permission_src` [ RunTime:0.020779s ]
+[ sql ] [ SQL ] SELECT * FROM `vue_permission_src` WHERE  `permission_code` <> '' [ RunTime:0.000434s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_permission_role` [ RunTime:0.019894s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `vue_permission_role` LIMIT 1 [ RunTime:0.000241s ]
+[ sql ] [ SQL ] SELECT * FROM `vue_permission_role` LIMIT 0,10 [ RunTime:0.000219s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_permission_menu` [ RunTime:0.018715s ]
+[ sql ] [ SQL ] SELECT `title` FROM `vue_permission_menu` WHERE  `id` IN (1,3,2,24,25,26,27,8,9,10,15,17,18,19,20,28,29,30,31) [ RunTime:0.000598s ]
+[ sql ] [ SQL ] SELECT `title` FROM `vue_permission_menu` WHERE  `id` IN (1,3) [ RunTime:0.000275s ]
+[ sql ] [ SQL ] SELECT `title` FROM `vue_permission_menu` WHERE  `id` IN (2,24,25,26,27,8,9,10,15,17,18,19,20,28,29,30,31) [ RunTime:0.000430s ]
+---------------------------------------------------------------
+[ 2018-11-02T11:48:22+08:00 ] 127.0.0.1 GET www.vue-admin-thinkphp.com/index.php/admin/permission/permissionMenuLst
+[运行时间：0.104012s] [吞吐率：9.61req/s] [内存消耗：2,608.38kb] [文件加载：48]
+[ info ] [ LANG ] D:\PHP\git\vue-admin-thinkphp\vueadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'permission',
+    2 => 'permissionMenuLst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.vue-admin-thinkphp.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:9090',
+  'x-token' => 't8fdad26ac86f667380fe52b6afaf46da',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://localhost:9090/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Permission->permissionMenuLst[ D:\PHP\git\vue-admin-thinkphp\vueadmin\application\admin\controller\Permission.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000535s ] mysql:host=127.0.0.1;port=3306;dbname=vueadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_admin` [ RunTime:0.025296s ]
+[ sql ] [ SQL ] SELECT `expire_time`,`id`,`token` FROM `vue_admin` WHERE  `token` = '8fdad26ac86f667380fe52b6afaf46da' LIMIT 1 [ RunTime:0.000294s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_permission_src` [ RunTime:0.019258s ]
+[ sql ] [ SQL ] SELECT * FROM `vue_permission_src` WHERE  `permission_code` <> '' [ RunTime:0.000366s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_permission_menu` [ RunTime:0.020016s ]
+[ sql ] [ SQL ] SELECT * FROM `vue_permission_menu` [ RunTime:0.000333s ]
+---------------------------------------------------------------
+[ 2018-11-02T11:48:34+08:00 ] 127.0.0.1 GET www.vue-admin-thinkphp.com/index.php/admin/permission/permissionSrcLst
+[运行时间：0.082048s] [吞吐率：12.19req/s] [内存消耗：2,581.41kb] [文件加载：48]
+[ info ] [ LANG ] D:\PHP\git\vue-admin-thinkphp\vueadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'permission',
+    2 => 'permissionSrcLst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.vue-admin-thinkphp.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:9090',
+  'x-token' => 't8fdad26ac86f667380fe52b6afaf46da',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://localhost:9090/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Permission->permissionSrcLst[ D:\PHP\git\vue-admin-thinkphp\vueadmin\application\admin\controller\Permission.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010404s ] mysql:host=127.0.0.1;port=3306;dbname=vueadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_admin` [ RunTime:0.022572s ]
+[ sql ] [ SQL ] SELECT `expire_time`,`id`,`token` FROM `vue_admin` WHERE  `token` = '8fdad26ac86f667380fe52b6afaf46da' LIMIT 1 [ RunTime:0.000213s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_permission_src` [ RunTime:0.017277s ]
+[ sql ] [ SQL ] SELECT * FROM `vue_permission_src` WHERE  `permission_code` <> '' [ RunTime:0.000644s ]
+[ sql ] [ SQL ] SELECT * FROM `vue_permission_src` [ RunTime:0.000606s ]
+---------------------------------------------------------------
+[ 2018-11-02T11:48:43+08:00 ] 127.0.0.1 GET www.vue-admin-thinkphp.com/index.php/admin/permission/permissionSrcLst
+[运行时间：0.095476s] [吞吐率：10.47req/s] [内存消耗：2,581.37kb] [文件加载：48]
+[ info ] [ LANG ] D:\PHP\git\vue-admin-thinkphp\vueadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'permission',
+    2 => 'permissionSrcLst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.vue-admin-thinkphp.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:9090',
+  'x-token' => 't8fdad26ac86f667380fe52b6afaf46da',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://localhost:9090/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Permission->permissionSrcLst[ D:\PHP\git\vue-admin-thinkphp\vueadmin\application\admin\controller\Permission.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000608s ] mysql:host=127.0.0.1;port=3306;dbname=vueadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_admin` [ RunTime:0.024688s ]
+[ sql ] [ SQL ] SELECT `expire_time`,`id`,`token` FROM `vue_admin` WHERE  `token` = '8fdad26ac86f667380fe52b6afaf46da' LIMIT 1 [ RunTime:0.000356s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_permission_src` [ RunTime:0.016903s ]
+[ sql ] [ SQL ] SELECT * FROM `vue_permission_src` WHERE  `permission_code` <> '' [ RunTime:0.000546s ]
+[ sql ] [ SQL ] SELECT * FROM `vue_permission_src` [ RunTime:0.000275s ]
+---------------------------------------------------------------
+[ 2018-11-02T11:48:47+08:00 ] 127.0.0.1 GET www.vue-admin-thinkphp.com/index.php/admin/permission/permissionMenuLst
+[运行时间：0.103256s] [吞吐率：9.68req/s] [内存消耗：2,608.38kb] [文件加载：48]
+[ info ] [ LANG ] D:\PHP\git\vue-admin-thinkphp\vueadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'permission',
+    2 => 'permissionMenuLst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.vue-admin-thinkphp.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:9090',
+  'x-token' => 't8fdad26ac86f667380fe52b6afaf46da',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://localhost:9090/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Permission->permissionMenuLst[ D:\PHP\git\vue-admin-thinkphp\vueadmin\application\admin\controller\Permission.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000694s ] mysql:host=127.0.0.1;port=3306;dbname=vueadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_admin` [ RunTime:0.022243s ]
+[ sql ] [ SQL ] SELECT `expire_time`,`id`,`token` FROM `vue_admin` WHERE  `token` = '8fdad26ac86f667380fe52b6afaf46da' LIMIT 1 [ RunTime:0.000285s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_permission_src` [ RunTime:0.019315s ]
+[ sql ] [ SQL ] SELECT * FROM `vue_permission_src` WHERE  `permission_code` <> '' [ RunTime:0.000417s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_permission_menu` [ RunTime:0.017412s ]
+[ sql ] [ SQL ] SELECT * FROM `vue_permission_menu` [ RunTime:0.000505s ]
+---------------------------------------------------------------
+[ 2018-11-02T11:52:04+08:00 ] 127.0.0.1 GET www.vue-admin-thinkphp.com/index.php/admin/permission/adminLst?page=1&total=0&pageSize=10&username=
+[运行时间：0.097693s] [吞吐率：10.24req/s] [内存消耗：2,681.38kb] [文件加载：52]
+[ info ] [ LANG ] D:\PHP\git\vue-admin-thinkphp\vueadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'permission',
+    2 => 'adminLst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.vue-admin-thinkphp.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:9090',
+  'x-token' => 't8fdad26ac86f667380fe52b6afaf46da',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://localhost:9090/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'total' => '0',
+  'pageSize' => '10',
+  'username' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Permission->adminLst[ D:\PHP\git\vue-admin-thinkphp\vueadmin\application\admin\controller\Permission.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000673s ] mysql:host=127.0.0.1;port=3306;dbname=vueadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_admin` [ RunTime:0.021786s ]
+[ sql ] [ SQL ] SELECT `expire_time`,`id`,`token` FROM `vue_admin` WHERE  `token` = '8fdad26ac86f667380fe52b6afaf46da' LIMIT 1 [ RunTime:0.000333s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_permission_src` [ RunTime:0.016648s ]
+[ sql ] [ SQL ] SELECT * FROM `vue_permission_src` WHERE  `permission_code` <> '' [ RunTime:0.000355s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `vue_admin` LIMIT 1 [ RunTime:0.000248s ]
+[ sql ] [ SQL ] SELECT `id`,`role_ids`,`username` FROM `vue_admin` LIMIT 0,10 [ RunTime:0.000264s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_permission_role` [ RunTime:0.016695s ]
+[ sql ] [ SQL ] SELECT `role_name` FROM `vue_permission_role` WHERE  `id` IN (4,9) [ RunTime:0.000583s ]
+[ sql ] [ SQL ] SELECT `role_name` FROM `vue_permission_role` WHERE  `id` IN (3) [ RunTime:0.000611s ]
+---------------------------------------------------------------
+[ 2018-11-02T11:52:06+08:00 ] 127.0.0.1 OPTIONS www.vue-admin-thinkphp.com/index.php/admin/permission/adminRoles
+[运行时间：0.044885s] [吞吐率：22.28req/s] [内存消耗：1,740.88kb] [文件加载：41]
+[ info ] [ LANG ] D:\PHP\git\vue-admin-thinkphp\vueadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'permission',
+    2 => 'adminRoles',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.vue-admin-thinkphp.com',
+  'connection' => 'keep-alive',
+  'access-control-request-method' => 'GET',
+  'origin' => 'http://localhost:9090',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'access-control-request-headers' => 'x-token',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-02T11:52:06+08:00 ] 127.0.0.1 OPTIONS www.vue-admin-thinkphp.com/index.php/admin/permission/adminDetail?id=3
+[运行时间：0.048641s] [吞吐率：20.56req/s] [内存消耗：1,741.17kb] [文件加载：41]
+[ info ] [ LANG ] D:\PHP\git\vue-admin-thinkphp\vueadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'permission',
+    2 => 'adminDetail',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.vue-admin-thinkphp.com',
+  'connection' => 'keep-alive',
+  'access-control-request-method' => 'GET',
+  'origin' => 'http://localhost:9090',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'access-control-request-headers' => 'x-token',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'id' => '3',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-02T11:52:06+08:00 ] 127.0.0.1 GET www.vue-admin-thinkphp.com/index.php/admin/permission/adminDetail?id=3
+[运行时间：0.101653s] [吞吐率：9.84req/s] [内存消耗：2,551.41kb] [文件加载：48]
+[ info ] [ LANG ] D:\PHP\git\vue-admin-thinkphp\vueadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'permission',
+    2 => 'adminDetail',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.vue-admin-thinkphp.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:9090',
+  'x-token' => 't8fdad26ac86f667380fe52b6afaf46da',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://localhost:9090/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'id' => '3',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Permission->adminDetail[ D:\PHP\git\vue-admin-thinkphp\vueadmin\application\admin\controller\Permission.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000534s ] mysql:host=127.0.0.1;port=3306;dbname=vueadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_admin` [ RunTime:0.031394s ]
+[ sql ] [ SQL ] SELECT `expire_time`,`id`,`token` FROM `vue_admin` WHERE  `token` = '8fdad26ac86f667380fe52b6afaf46da' LIMIT 1 [ RunTime:0.000309s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_permission_src` [ RunTime:0.025658s ]
+[ sql ] [ SQL ] SELECT * FROM `vue_permission_src` WHERE  `permission_code` <> '' [ RunTime:0.000345s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`role_ids` FROM `vue_admin` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000429s ]
+---------------------------------------------------------------
+[ 2018-11-02T11:52:06+08:00 ] 127.0.0.1 GET www.vue-admin-thinkphp.com/index.php/admin/permission/adminRoles
+[运行时间：0.120775s] [吞吐率：8.28req/s] [内存消耗：2,553.34kb] [文件加载：48]
+[ info ] [ LANG ] D:\PHP\git\vue-admin-thinkphp\vueadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'permission',
+    2 => 'adminRoles',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.vue-admin-thinkphp.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:9090',
+  'x-token' => 't8fdad26ac86f667380fe52b6afaf46da',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://localhost:9090/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Permission->adminRoles[ D:\PHP\git\vue-admin-thinkphp\vueadmin\application\admin\controller\Permission.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001046s ] mysql:host=127.0.0.1;port=3306;dbname=vueadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_admin` [ RunTime:0.034432s ]
+[ sql ] [ SQL ] SELECT `expire_time`,`id`,`token` FROM `vue_admin` WHERE  `token` = '8fdad26ac86f667380fe52b6afaf46da' LIMIT 1 [ RunTime:0.000350s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_permission_src` [ RunTime:0.024990s ]
+[ sql ] [ SQL ] SELECT * FROM `vue_permission_src` WHERE  `permission_code` <> '' [ RunTime:0.000570s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_permission_role` [ RunTime:0.017137s ]
+[ sql ] [ SQL ] SELECT `id`,`role_name` FROM `vue_permission_role` [ RunTime:0.000369s ]
+---------------------------------------------------------------
+[ 2018-11-02T11:52:08+08:00 ] 127.0.0.1 GET www.vue-admin-thinkphp.com/index.php/admin/permission/adminLst?page=1&total=0&pageSize=10&username=
+[运行时间：0.110949s] [吞吐率：9.01req/s] [内存消耗：2,681.38kb] [文件加载：52]
+[ info ] [ LANG ] D:\PHP\git\vue-admin-thinkphp\vueadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'permission',
+    2 => 'adminLst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.vue-admin-thinkphp.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:9090',
+  'x-token' => 't8fdad26ac86f667380fe52b6afaf46da',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://localhost:9090/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'total' => '0',
+  'pageSize' => '10',
+  'username' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Permission->adminLst[ D:\PHP\git\vue-admin-thinkphp\vueadmin\application\admin\controller\Permission.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010758s ] mysql:host=127.0.0.1;port=3306;dbname=vueadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_admin` [ RunTime:0.021711s ]
+[ sql ] [ SQL ] SELECT `expire_time`,`id`,`token` FROM `vue_admin` WHERE  `token` = '8fdad26ac86f667380fe52b6afaf46da' LIMIT 1 [ RunTime:0.000382s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_permission_src` [ RunTime:0.017385s ]
+[ sql ] [ SQL ] SELECT * FROM `vue_permission_src` WHERE  `permission_code` <> '' [ RunTime:0.000278s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `vue_admin` LIMIT 1 [ RunTime:0.000268s ]
+[ sql ] [ SQL ] SELECT `id`,`role_ids`,`username` FROM `vue_admin` LIMIT 0,10 [ RunTime:0.000237s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_permission_role` [ RunTime:0.014868s ]
+[ sql ] [ SQL ] SELECT `role_name` FROM `vue_permission_role` WHERE  `id` IN (4,9) [ RunTime:0.000310s ]
+[ sql ] [ SQL ] SELECT `role_name` FROM `vue_permission_role` WHERE  `id` IN (3) [ RunTime:0.000243s ]
+---------------------------------------------------------------
+[ 2018-11-02T11:52:10+08:00 ] 127.0.0.1 OPTIONS www.vue-admin-thinkphp.com/index.php/admin/permission/adminDetail?id=2
+[运行时间：0.023547s] [吞吐率：42.47req/s] [内存消耗：1,741.17kb] [文件加载：41]
+[ info ] [ LANG ] D:\PHP\git\vue-admin-thinkphp\vueadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'permission',
+    2 => 'adminDetail',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.vue-admin-thinkphp.com',
+  'connection' => 'keep-alive',
+  'access-control-request-method' => 'GET',
+  'origin' => 'http://localhost:9090',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'access-control-request-headers' => 'x-token',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-02T11:52:10+08:00 ] 127.0.0.1 GET www.vue-admin-thinkphp.com/index.php/admin/permission/adminRoles
+[运行时间：0.102823s] [吞吐率：9.73req/s] [内存消耗：2,553.34kb] [文件加载：48]
+[ info ] [ LANG ] D:\PHP\git\vue-admin-thinkphp\vueadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'permission',
+    2 => 'adminRoles',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.vue-admin-thinkphp.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:9090',
+  'x-token' => 't8fdad26ac86f667380fe52b6afaf46da',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://localhost:9090/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Permission->adminRoles[ D:\PHP\git\vue-admin-thinkphp\vueadmin\application\admin\controller\Permission.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000588s ] mysql:host=127.0.0.1;port=3306;dbname=vueadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_admin` [ RunTime:0.026695s ]
+[ sql ] [ SQL ] SELECT `expire_time`,`id`,`token` FROM `vue_admin` WHERE  `token` = '8fdad26ac86f667380fe52b6afaf46da' LIMIT 1 [ RunTime:0.000434s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_permission_src` [ RunTime:0.017798s ]
+[ sql ] [ SQL ] SELECT * FROM `vue_permission_src` WHERE  `permission_code` <> '' [ RunTime:0.000442s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_permission_role` [ RunTime:0.023456s ]
+[ sql ] [ SQL ] SELECT `id`,`role_name` FROM `vue_permission_role` [ RunTime:0.000294s ]
+---------------------------------------------------------------
+[ 2018-11-02T11:52:10+08:00 ] 127.0.0.1 GET www.vue-admin-thinkphp.com/index.php/admin/permission/adminDetail?id=2
+[运行时间：0.073152s] [吞吐率：13.67req/s] [内存消耗：2,551.33kb] [文件加载：48]
+[ info ] [ LANG ] D:\PHP\git\vue-admin-thinkphp\vueadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'permission',
+    2 => 'adminDetail',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.vue-admin-thinkphp.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:9090',
+  'x-token' => 't8fdad26ac86f667380fe52b6afaf46da',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://localhost:9090/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Permission->adminDetail[ D:\PHP\git\vue-admin-thinkphp\vueadmin\application\admin\controller\Permission.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000662s ] mysql:host=127.0.0.1;port=3306;dbname=vueadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_admin` [ RunTime:0.027667s ]
+[ sql ] [ SQL ] SELECT `expire_time`,`id`,`token` FROM `vue_admin` WHERE  `token` = '8fdad26ac86f667380fe52b6afaf46da' LIMIT 1 [ RunTime:0.000305s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_permission_src` [ RunTime:0.016219s ]
+[ sql ] [ SQL ] SELECT * FROM `vue_permission_src` WHERE  `permission_code` <> '' [ RunTime:0.000382s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`role_ids` FROM `vue_admin` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000341s ]
+---------------------------------------------------------------
+[ 2018-11-02T11:52:12+08:00 ] 127.0.0.1 GET www.vue-admin-thinkphp.com/index.php/admin/permission/adminLst?page=1&total=0&pageSize=10&username=
+[运行时间：0.088106s] [吞吐率：11.35req/s] [内存消耗：2,681.38kb] [文件加载：52]
+[ info ] [ LANG ] D:\PHP\git\vue-admin-thinkphp\vueadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'permission',
+    2 => 'adminLst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.vue-admin-thinkphp.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:9090',
+  'x-token' => 't8fdad26ac86f667380fe52b6afaf46da',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://localhost:9090/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'total' => '0',
+  'pageSize' => '10',
+  'username' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Permission->adminLst[ D:\PHP\git\vue-admin-thinkphp\vueadmin\application\admin\controller\Permission.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000546s ] mysql:host=127.0.0.1;port=3306;dbname=vueadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_admin` [ RunTime:0.023068s ]
+[ sql ] [ SQL ] SELECT `expire_time`,`id`,`token` FROM `vue_admin` WHERE  `token` = '8fdad26ac86f667380fe52b6afaf46da' LIMIT 1 [ RunTime:0.000264s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_permission_src` [ RunTime:0.017718s ]
+[ sql ] [ SQL ] SELECT * FROM `vue_permission_src` WHERE  `permission_code` <> '' [ RunTime:0.000290s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `vue_admin` LIMIT 1 [ RunTime:0.000185s ]
+[ sql ] [ SQL ] SELECT `id`,`role_ids`,`username` FROM `vue_admin` LIMIT 0,10 [ RunTime:0.000350s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_permission_role` [ RunTime:0.018986s ]
+[ sql ] [ SQL ] SELECT `role_name` FROM `vue_permission_role` WHERE  `id` IN (4,9) [ RunTime:0.000572s ]
+[ sql ] [ SQL ] SELECT `role_name` FROM `vue_permission_role` WHERE  `id` IN (3) [ RunTime:0.000370s ]
+---------------------------------------------------------------
+[ 2018-11-02T11:52:14+08:00 ] 127.0.0.1 GET www.vue-admin-thinkphp.com/index.php/admin/permission/adminLst?page=1&total=0&pageSize=10&username=
+[运行时间：0.087572s] [吞吐率：11.42req/s] [内存消耗：2,681.38kb] [文件加载：52]
+[ info ] [ LANG ] D:\PHP\git\vue-admin-thinkphp\vueadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'permission',
+    2 => 'adminLst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.vue-admin-thinkphp.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:9090',
+  'x-token' => 't8fdad26ac86f667380fe52b6afaf46da',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://localhost:9090/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'total' => '0',
+  'pageSize' => '10',
+  'username' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Permission->adminLst[ D:\PHP\git\vue-admin-thinkphp\vueadmin\application\admin\controller\Permission.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000545s ] mysql:host=127.0.0.1;port=3306;dbname=vueadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_admin` [ RunTime:0.020064s ]
+[ sql ] [ SQL ] SELECT `expire_time`,`id`,`token` FROM `vue_admin` WHERE  `token` = '8fdad26ac86f667380fe52b6afaf46da' LIMIT 1 [ RunTime:0.000310s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_permission_src` [ RunTime:0.016349s ]
+[ sql ] [ SQL ] SELECT * FROM `vue_permission_src` WHERE  `permission_code` <> '' [ RunTime:0.000430s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `vue_admin` LIMIT 1 [ RunTime:0.000154s ]
+[ sql ] [ SQL ] SELECT `id`,`role_ids`,`username` FROM `vue_admin` LIMIT 0,10 [ RunTime:0.000124s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_permission_role` [ RunTime:0.016407s ]
+[ sql ] [ SQL ] SELECT `role_name` FROM `vue_permission_role` WHERE  `id` IN (4,9) [ RunTime:0.000306s ]
+[ sql ] [ SQL ] SELECT `role_name` FROM `vue_permission_role` WHERE  `id` IN (3) [ RunTime:0.000270s ]
+---------------------------------------------------------------
+[ 2018-11-02T11:52:18+08:00 ] 127.0.0.1 GET www.vue-admin-thinkphp.com/index.php/admin/uc/info
+[运行时间：0.072667s] [吞吐率：13.76req/s] [内存消耗：2,399.64kb] [文件加载：48]
+[ info ] [ LANG ] D:\PHP\git\vue-admin-thinkphp\vueadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'uc',
+    2 => 'info',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.vue-admin-thinkphp.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:9090',
+  'x-token' => 't8fdad26ac86f667380fe52b6afaf46da',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://localhost:9090/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Uc->info[ D:\PHP\git\vue-admin-thinkphp\vueadmin\application\admin\controller\Uc.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010906s ] mysql:host=127.0.0.1;port=3306;dbname=vueadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_admin` [ RunTime:0.019562s ]
+[ sql ] [ SQL ] SELECT `expire_time`,`id`,`token` FROM `vue_admin` WHERE  `token` = '8fdad26ac86f667380fe52b6afaf46da' LIMIT 1 [ RunTime:0.000394s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_permission_src` [ RunTime:0.016957s ]
+[ sql ] [ SQL ] SELECT * FROM `vue_permission_src` WHERE  `permission_code` <> '' [ RunTime:0.000315s ]
+[ sql ] [ SQL ] SELECT * FROM `vue_admin` WHERE  `token` = '8fdad26ac86f667380fe52b6afaf46da' LIMIT 1 [ RunTime:0.000223s ]
+---------------------------------------------------------------
+[ 2018-11-02T11:52:18+08:00 ] 127.0.0.1 POST www.vue-admin-thinkphp.com/index.php/admin/uc/getPermissionRouter?roles[]=3
+[运行时间：0.101717s] [吞吐率：9.83req/s] [内存消耗：2,471.95kb] [文件加载：48]
+[ info ] [ LANG ] D:\PHP\git\vue-admin-thinkphp\vueadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'uc',
+    2 => 'getPermissionRouter',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.vue-admin-thinkphp.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:9090',
+  'x-token' => 't8fdad26ac86f667380fe52b6afaf46da',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://localhost:9090/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'roles' => 
+  array (
+    0 => '3',
+  ),
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Uc->getPermissionRouter[ D:\PHP\git\vue-admin-thinkphp\vueadmin\application\admin\controller\Uc.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000879s ] mysql:host=127.0.0.1;port=3306;dbname=vueadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_admin` [ RunTime:0.020712s ]
+[ sql ] [ SQL ] SELECT `expire_time`,`id`,`token` FROM `vue_admin` WHERE  `token` = '8fdad26ac86f667380fe52b6afaf46da' LIMIT 1 [ RunTime:0.000462s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_permission_src` [ RunTime:0.020826s ]
+[ sql ] [ SQL ] SELECT * FROM `vue_permission_src` WHERE  `permission_code` <> '' [ RunTime:0.000568s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_permission_role` [ RunTime:0.018529s ]
+[ sql ] [ SQL ] SELECT * FROM `vue_permission_role` WHERE  `id` IN (3) [ RunTime:0.000300s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_permission_menu` [ RunTime:0.015030s ]
+[ sql ] [ SQL ] SELECT * FROM `vue_permission_menu` WHERE  `id` IN (1,3,2,24,25,26,27,8,9,10,15,17,18,19,20,28,29,30,31) [ RunTime:0.000396s ]
+---------------------------------------------------------------
+[ 2018-11-02T11:52:25+08:00 ] 127.0.0.1 GET www.vue-admin-thinkphp.com/index.php/admin/permission/adminLst?page=1&total=0&pageSize=10&username=
+[运行时间：0.089690s] [吞吐率：11.15req/s] [内存消耗：2,681.38kb] [文件加载：52]
+[ info ] [ LANG ] D:\PHP\git\vue-admin-thinkphp\vueadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'permission',
+    2 => 'adminLst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.vue-admin-thinkphp.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:9090',
+  'x-token' => 't8fdad26ac86f667380fe52b6afaf46da',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://localhost:9090/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'total' => '0',
+  'pageSize' => '10',
+  'username' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Permission->adminLst[ D:\PHP\git\vue-admin-thinkphp\vueadmin\application\admin\controller\Permission.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000604s ] mysql:host=127.0.0.1;port=3306;dbname=vueadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_admin` [ RunTime:0.022717s ]
+[ sql ] [ SQL ] SELECT `expire_time`,`id`,`token` FROM `vue_admin` WHERE  `token` = '8fdad26ac86f667380fe52b6afaf46da' LIMIT 1 [ RunTime:0.000388s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_permission_src` [ RunTime:0.017198s ]
+[ sql ] [ SQL ] SELECT * FROM `vue_permission_src` WHERE  `permission_code` <> '' [ RunTime:0.000395s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `vue_admin` LIMIT 1 [ RunTime:0.000238s ]
+[ sql ] [ SQL ] SELECT `id`,`role_ids`,`username` FROM `vue_admin` LIMIT 0,10 [ RunTime:0.000244s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_permission_role` [ RunTime:0.016205s ]
+[ sql ] [ SQL ] SELECT `role_name` FROM `vue_permission_role` WHERE  `id` IN (4,9) [ RunTime:0.000257s ]
+[ sql ] [ SQL ] SELECT `role_name` FROM `vue_permission_role` WHERE  `id` IN (3) [ RunTime:0.000262s ]
+---------------------------------------------------------------
+[ 2018-11-02T11:55:27+08:00 ] 127.0.0.1 GET www.vue-admin-thinkphp.com/index.php/admin/permission/permissionRoleLst?page=1&total=0&pageSize=10&role_name=
+[运行时间：0.110897s] [吞吐率：9.02req/s] [内存消耗：2,703.53kb] [文件加载：52]
+[ info ] [ LANG ] D:\PHP\git\vue-admin-thinkphp\vueadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'permission',
+    2 => 'permissionRoleLst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.vue-admin-thinkphp.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:9090',
+  'x-token' => 't8fdad26ac86f667380fe52b6afaf46da',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://localhost:9090/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'total' => '0',
+  'pageSize' => '10',
+  'role_name' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Permission->permissionRoleLst[ D:\PHP\git\vue-admin-thinkphp\vueadmin\application\admin\controller\Permission.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001310s ] mysql:host=127.0.0.1;port=3306;dbname=vueadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_admin` [ RunTime:0.023242s ]
+[ sql ] [ SQL ] SELECT `expire_time`,`id`,`token` FROM `vue_admin` WHERE  `token` = '8fdad26ac86f667380fe52b6afaf46da' LIMIT 1 [ RunTime:0.000430s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_permission_src` [ RunTime:0.015933s ]
+[ sql ] [ SQL ] SELECT * FROM `vue_permission_src` WHERE  `permission_code` <> '' [ RunTime:0.000345s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_permission_role` [ RunTime:0.015941s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `vue_permission_role` LIMIT 1 [ RunTime:0.000228s ]
+[ sql ] [ SQL ] SELECT * FROM `vue_permission_role` LIMIT 0,10 [ RunTime:0.000277s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_permission_menu` [ RunTime:0.015950s ]
+[ sql ] [ SQL ] SELECT `title` FROM `vue_permission_menu` WHERE  `id` IN (1,3,2,24,25,26,27,8,9,10,15,17,18,19,20,28,29,30,31) [ RunTime:0.000345s ]
+[ sql ] [ SQL ] SELECT `title` FROM `vue_permission_menu` WHERE  `id` IN (1,3) [ RunTime:0.000274s ]
+[ sql ] [ SQL ] SELECT `title` FROM `vue_permission_menu` WHERE  `id` IN (2,24,25,26,27,8,9,10,15,17,18,19,20,28,29,30,31) [ RunTime:0.000308s ]
+---------------------------------------------------------------
+[ 2018-11-02T11:55:29+08:00 ] 127.0.0.1 GET www.vue-admin-thinkphp.com/index.php/admin/permission/adminLst?page=1&total=0&pageSize=10&username=
+[运行时间：0.108105s] [吞吐率：9.25req/s] [内存消耗：2,681.38kb] [文件加载：52]
+[ info ] [ LANG ] D:\PHP\git\vue-admin-thinkphp\vueadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'permission',
+    2 => 'adminLst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.vue-admin-thinkphp.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:9090',
+  'x-token' => 't8fdad26ac86f667380fe52b6afaf46da',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://localhost:9090/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'total' => '0',
+  'pageSize' => '10',
+  'username' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Permission->adminLst[ D:\PHP\git\vue-admin-thinkphp\vueadmin\application\admin\controller\Permission.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000581s ] mysql:host=127.0.0.1;port=3306;dbname=vueadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_admin` [ RunTime:0.023894s ]
+[ sql ] [ SQL ] SELECT `expire_time`,`id`,`token` FROM `vue_admin` WHERE  `token` = '8fdad26ac86f667380fe52b6afaf46da' LIMIT 1 [ RunTime:0.000367s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_permission_src` [ RunTime:0.018234s ]
+[ sql ] [ SQL ] SELECT * FROM `vue_permission_src` WHERE  `permission_code` <> '' [ RunTime:0.000433s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `vue_admin` LIMIT 1 [ RunTime:0.000267s ]
+[ sql ] [ SQL ] SELECT `id`,`role_ids`,`username` FROM `vue_admin` LIMIT 0,10 [ RunTime:0.000259s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_permission_role` [ RunTime:0.017474s ]
+[ sql ] [ SQL ] SELECT `role_name` FROM `vue_permission_role` WHERE  `id` IN (4,9) [ RunTime:0.000343s ]
+[ sql ] [ SQL ] SELECT `role_name` FROM `vue_permission_role` WHERE  `id` IN (3) [ RunTime:0.000245s ]
+---------------------------------------------------------------
+[ 2018-11-02T11:55:35+08:00 ] 127.0.0.1 GET www.vue-admin-thinkphp.com/index.php/admin/permission/adminLst?page=1&total=0&pageSize=10&username=
+[运行时间：0.090608s] [吞吐率：11.04req/s] [内存消耗：2,681.38kb] [文件加载：52]
+[ info ] [ LANG ] D:\PHP\git\vue-admin-thinkphp\vueadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'permission',
+    2 => 'adminLst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.vue-admin-thinkphp.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:9090',
+  'x-token' => 't8fdad26ac86f667380fe52b6afaf46da',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://localhost:9090/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'total' => '0',
+  'pageSize' => '10',
+  'username' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Permission->adminLst[ D:\PHP\git\vue-admin-thinkphp\vueadmin\application\admin\controller\Permission.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000629s ] mysql:host=127.0.0.1;port=3306;dbname=vueadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_admin` [ RunTime:0.021711s ]
+[ sql ] [ SQL ] SELECT `expire_time`,`id`,`token` FROM `vue_admin` WHERE  `token` = '8fdad26ac86f667380fe52b6afaf46da' LIMIT 1 [ RunTime:0.000280s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_permission_src` [ RunTime:0.017395s ]
+[ sql ] [ SQL ] SELECT * FROM `vue_permission_src` WHERE  `permission_code` <> '' [ RunTime:0.000370s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `vue_admin` LIMIT 1 [ RunTime:0.000240s ]
+[ sql ] [ SQL ] SELECT `id`,`role_ids`,`username` FROM `vue_admin` LIMIT 0,10 [ RunTime:0.000252s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_permission_role` [ RunTime:0.018660s ]
+[ sql ] [ SQL ] SELECT `role_name` FROM `vue_permission_role` WHERE  `id` IN (4,9) [ RunTime:0.000579s ]
+[ sql ] [ SQL ] SELECT `role_name` FROM `vue_permission_role` WHERE  `id` IN (3) [ RunTime:0.000297s ]
+---------------------------------------------------------------
+[ 2018-11-02T11:56:51+08:00 ] 127.0.0.1 OPTIONS www.vue-admin-thinkphp.com/index.php/admin/permission/adminLst?page=1&total=0&pageSize=10&username=
+[运行时间：0.028110s] [吞吐率：35.57req/s] [内存消耗：1,741.75kb] [文件加载：41]
+[ info ] [ LANG ] D:\PHP\git\vue-admin-thinkphp\vueadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'permission',
+    2 => 'adminLst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.vue-admin-thinkphp.com',
+  'connection' => 'keep-alive',
+  'access-control-request-method' => 'GET',
+  'origin' => 'http://localhost:9090',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'access-control-request-headers' => 'x-token',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'total' => '0',
+  'pageSize' => '10',
+  'username' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-02T11:56:51+08:00 ] 127.0.0.1 GET www.vue-admin-thinkphp.com/index.php/admin/permission/adminLst?page=1&total=0&pageSize=10&username=
+[运行时间：0.087123s] [吞吐率：11.48req/s] [内存消耗：2,681.38kb] [文件加载：52]
+[ info ] [ LANG ] D:\PHP\git\vue-admin-thinkphp\vueadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'permission',
+    2 => 'adminLst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.vue-admin-thinkphp.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:9090',
+  'x-token' => 't8fdad26ac86f667380fe52b6afaf46da',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://localhost:9090/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'total' => '0',
+  'pageSize' => '10',
+  'username' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Permission->adminLst[ D:\PHP\git\vue-admin-thinkphp\vueadmin\application\admin\controller\Permission.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000471s ] mysql:host=127.0.0.1;port=3306;dbname=vueadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_admin` [ RunTime:0.023650s ]
+[ sql ] [ SQL ] SELECT `expire_time`,`id`,`token` FROM `vue_admin` WHERE  `token` = '8fdad26ac86f667380fe52b6afaf46da' LIMIT 1 [ RunTime:0.000428s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_permission_src` [ RunTime:0.017894s ]
+[ sql ] [ SQL ] SELECT * FROM `vue_permission_src` WHERE  `permission_code` <> '' [ RunTime:0.000382s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `vue_admin` LIMIT 1 [ RunTime:0.000235s ]
+[ sql ] [ SQL ] SELECT `id`,`role_ids`,`username` FROM `vue_admin` LIMIT 0,10 [ RunTime:0.000266s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_permission_role` [ RunTime:0.018837s ]
+[ sql ] [ SQL ] SELECT `role_name` FROM `vue_permission_role` WHERE  `id` IN (4,9) [ RunTime:0.000362s ]
+[ sql ] [ SQL ] SELECT `role_name` FROM `vue_permission_role` WHERE  `id` IN (3) [ RunTime:0.000242s ]
+---------------------------------------------------------------
+[ 2018-11-02T11:56:53+08:00 ] 127.0.0.1 OPTIONS www.vue-admin-thinkphp.com/index.php/admin/permission/permissionMenuLst
+[运行时间：0.036437s] [吞吐率：27.44req/s] [内存消耗：1,740.91kb] [文件加载：41]
+[ info ] [ LANG ] D:\PHP\git\vue-admin-thinkphp\vueadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'permission',
+    2 => 'permissionMenuLst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.vue-admin-thinkphp.com',
+  'connection' => 'keep-alive',
+  'access-control-request-method' => 'GET',
+  'origin' => 'http://localhost:9090',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'access-control-request-headers' => 'x-token',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-02T11:56:53+08:00 ] 127.0.0.1 GET www.vue-admin-thinkphp.com/index.php/admin/permission/permissionMenuLst
+[运行时间：0.081200s] [吞吐率：12.32req/s] [内存消耗：2,608.38kb] [文件加载：48]
+[ info ] [ LANG ] D:\PHP\git\vue-admin-thinkphp\vueadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'permission',
+    2 => 'permissionMenuLst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.vue-admin-thinkphp.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:9090',
+  'x-token' => 't8fdad26ac86f667380fe52b6afaf46da',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://localhost:9090/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Permission->permissionMenuLst[ D:\PHP\git\vue-admin-thinkphp\vueadmin\application\admin\controller\Permission.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000632s ] mysql:host=127.0.0.1;port=3306;dbname=vueadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_admin` [ RunTime:0.022219s ]
+[ sql ] [ SQL ] SELECT `expire_time`,`id`,`token` FROM `vue_admin` WHERE  `token` = '8fdad26ac86f667380fe52b6afaf46da' LIMIT 1 [ RunTime:0.000325s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_permission_src` [ RunTime:0.016763s ]
+[ sql ] [ SQL ] SELECT * FROM `vue_permission_src` WHERE  `permission_code` <> '' [ RunTime:0.000370s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_permission_menu` [ RunTime:0.016384s ]
+[ sql ] [ SQL ] SELECT * FROM `vue_permission_menu` [ RunTime:0.000505s ]
+---------------------------------------------------------------
+[ 2018-11-02T11:56:54+08:00 ] 127.0.0.1 GET www.vue-admin-thinkphp.com/index.php/admin/permission/adminLst?page=1&total=0&pageSize=10&username=
+[运行时间：0.097980s] [吞吐率：10.21req/s] [内存消耗：2,681.38kb] [文件加载：52]
+[ info ] [ LANG ] D:\PHP\git\vue-admin-thinkphp\vueadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'permission',
+    2 => 'adminLst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.vue-admin-thinkphp.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:9090',
+  'x-token' => 't8fdad26ac86f667380fe52b6afaf46da',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://localhost:9090/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'total' => '0',
+  'pageSize' => '10',
+  'username' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Permission->adminLst[ D:\PHP\git\vue-admin-thinkphp\vueadmin\application\admin\controller\Permission.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000715s ] mysql:host=127.0.0.1;port=3306;dbname=vueadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_admin` [ RunTime:0.021995s ]
+[ sql ] [ SQL ] SELECT `expire_time`,`id`,`token` FROM `vue_admin` WHERE  `token` = '8fdad26ac86f667380fe52b6afaf46da' LIMIT 1 [ RunTime:0.000324s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_permission_src` [ RunTime:0.015818s ]
+[ sql ] [ SQL ] SELECT * FROM `vue_permission_src` WHERE  `permission_code` <> '' [ RunTime:0.000347s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `vue_admin` LIMIT 1 [ RunTime:0.000254s ]
+[ sql ] [ SQL ] SELECT `id`,`role_ids`,`username` FROM `vue_admin` LIMIT 0,10 [ RunTime:0.000373s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_permission_role` [ RunTime:0.016153s ]
+[ sql ] [ SQL ] SELECT `role_name` FROM `vue_permission_role` WHERE  `id` IN (4,9) [ RunTime:0.000319s ]
+[ sql ] [ SQL ] SELECT `role_name` FROM `vue_permission_role` WHERE  `id` IN (3) [ RunTime:0.000147s ]
+---------------------------------------------------------------
+[ 2018-11-02T11:56:59+08:00 ] 127.0.0.1 OPTIONS www.vue-admin-thinkphp.com/index.php/admin/permission/permissionRoleLst?page=1&total=0&pageSize=10&role_name=
+[运行时间：0.015609s] [吞吐率：64.07req/s] [内存消耗：1,741.80kb] [文件加载：41]
+[ info ] [ LANG ] D:\PHP\git\vue-admin-thinkphp\vueadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'permission',
+    2 => 'permissionRoleLst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.vue-admin-thinkphp.com',
+  'connection' => 'keep-alive',
+  'access-control-request-method' => 'GET',
+  'origin' => 'http://localhost:9090',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'access-control-request-headers' => 'x-token',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'total' => '0',
+  'pageSize' => '10',
+  'role_name' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-02T11:56:59+08:00 ] 127.0.0.1 GET www.vue-admin-thinkphp.com/index.php/admin/permission/permissionRoleLst?page=1&total=0&pageSize=10&role_name=
+[运行时间：0.118420s] [吞吐率：8.44req/s] [内存消耗：2,703.53kb] [文件加载：52]
+[ info ] [ LANG ] D:\PHP\git\vue-admin-thinkphp\vueadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'permission',
+    2 => 'permissionRoleLst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.vue-admin-thinkphp.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:9090',
+  'x-token' => 't8fdad26ac86f667380fe52b6afaf46da',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://localhost:9090/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'total' => '0',
+  'pageSize' => '10',
+  'role_name' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Permission->permissionRoleLst[ D:\PHP\git\vue-admin-thinkphp\vueadmin\application\admin\controller\Permission.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010595s ] mysql:host=127.0.0.1;port=3306;dbname=vueadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_admin` [ RunTime:0.021926s ]
+[ sql ] [ SQL ] SELECT `expire_time`,`id`,`token` FROM `vue_admin` WHERE  `token` = '8fdad26ac86f667380fe52b6afaf46da' LIMIT 1 [ RunTime:0.000476s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_permission_src` [ RunTime:0.022081s ]
+[ sql ] [ SQL ] SELECT * FROM `vue_permission_src` WHERE  `permission_code` <> '' [ RunTime:0.000601s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_permission_role` [ RunTime:0.018252s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `vue_permission_role` LIMIT 1 [ RunTime:0.000251s ]
+[ sql ] [ SQL ] SELECT * FROM `vue_permission_role` LIMIT 0,10 [ RunTime:0.000252s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_permission_menu` [ RunTime:0.018287s ]
+[ sql ] [ SQL ] SELECT `title` FROM `vue_permission_menu` WHERE  `id` IN (1,3,2,24,25,26,27,8,9,10,15,17,18,19,20,28,29,30,31) [ RunTime:0.000331s ]
+[ sql ] [ SQL ] SELECT `title` FROM `vue_permission_menu` WHERE  `id` IN (1,3) [ RunTime:0.000216s ]
+[ sql ] [ SQL ] SELECT `title` FROM `vue_permission_menu` WHERE  `id` IN (2,24,25,26,27,8,9,10,15,17,18,19,20,28,29,30,31) [ RunTime:0.000350s ]
+---------------------------------------------------------------
+[ 2018-11-02T11:57:00+08:00 ] 127.0.0.1 OPTIONS www.vue-admin-thinkphp.com/index.php/admin/permission/permissionSrcLst
+[运行时间：0.016139s] [吞吐率：61.96req/s] [内存消耗：1,740.91kb] [文件加载：41]
+[ info ] [ LANG ] D:\PHP\git\vue-admin-thinkphp\vueadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'permission',
+    2 => 'permissionSrcLst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.vue-admin-thinkphp.com',
+  'connection' => 'keep-alive',
+  'access-control-request-method' => 'GET',
+  'origin' => 'http://localhost:9090',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'access-control-request-headers' => 'x-token',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-02T11:57:01+08:00 ] 127.0.0.1 GET www.vue-admin-thinkphp.com/index.php/admin/permission/permissionSrcLst
+[运行时间：0.070291s] [吞吐率：14.23req/s] [内存消耗：2,581.37kb] [文件加载：48]
+[ info ] [ LANG ] D:\PHP\git\vue-admin-thinkphp\vueadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'permission',
+    2 => 'permissionSrcLst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.vue-admin-thinkphp.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:9090',
+  'x-token' => 't8fdad26ac86f667380fe52b6afaf46da',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://localhost:9090/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Permission->permissionSrcLst[ D:\PHP\git\vue-admin-thinkphp\vueadmin\application\admin\controller\Permission.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010237s ] mysql:host=127.0.0.1;port=3306;dbname=vueadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_admin` [ RunTime:0.019336s ]
+[ sql ] [ SQL ] SELECT `expire_time`,`id`,`token` FROM `vue_admin` WHERE  `token` = '8fdad26ac86f667380fe52b6afaf46da' LIMIT 1 [ RunTime:0.000317s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_permission_src` [ RunTime:0.017160s ]
+[ sql ] [ SQL ] SELECT * FROM `vue_permission_src` WHERE  `permission_code` <> '' [ RunTime:0.000423s ]
+[ sql ] [ SQL ] SELECT * FROM `vue_permission_src` [ RunTime:0.000299s ]
+---------------------------------------------------------------
+[ 2018-11-02T11:57:03+08:00 ] 127.0.0.1 GET www.vue-admin-thinkphp.com/index.php/admin/permission/permissionRoleLst?page=1&total=0&pageSize=10&role_name=
+[运行时间：0.120145s] [吞吐率：8.32req/s] [内存消耗：2,703.53kb] [文件加载：52]
+[ info ] [ LANG ] D:\PHP\git\vue-admin-thinkphp\vueadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'permission',
+    2 => 'permissionRoleLst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.vue-admin-thinkphp.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:9090',
+  'x-token' => 't8fdad26ac86f667380fe52b6afaf46da',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://localhost:9090/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'total' => '0',
+  'pageSize' => '10',
+  'role_name' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Permission->permissionRoleLst[ D:\PHP\git\vue-admin-thinkphp\vueadmin\application\admin\controller\Permission.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001141s ] mysql:host=127.0.0.1;port=3306;dbname=vueadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_admin` [ RunTime:0.020580s ]
+[ sql ] [ SQL ] SELECT `expire_time`,`id`,`token` FROM `vue_admin` WHERE  `token` = '8fdad26ac86f667380fe52b6afaf46da' LIMIT 1 [ RunTime:0.000340s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_permission_src` [ RunTime:0.017244s ]
+[ sql ] [ SQL ] SELECT * FROM `vue_permission_src` WHERE  `permission_code` <> '' [ RunTime:0.000405s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_permission_role` [ RunTime:0.016602s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `vue_permission_role` LIMIT 1 [ RunTime:0.000342s ]
+[ sql ] [ SQL ] SELECT * FROM `vue_permission_role` LIMIT 0,10 [ RunTime:0.000308s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_permission_menu` [ RunTime:0.015196s ]
+[ sql ] [ SQL ] SELECT `title` FROM `vue_permission_menu` WHERE  `id` IN (1,3,2,24,25,26,27,8,9,10,15,17,18,19,20,28,29,30,31) [ RunTime:0.000329s ]
+[ sql ] [ SQL ] SELECT `title` FROM `vue_permission_menu` WHERE  `id` IN (1,3) [ RunTime:0.000218s ]
+[ sql ] [ SQL ] SELECT `title` FROM `vue_permission_menu` WHERE  `id` IN (2,24,25,26,27,8,9,10,15,17,18,19,20,28,29,30,31) [ RunTime:0.000254s ]
+---------------------------------------------------------------
+[ 2018-11-02T11:57:04+08:00 ] 127.0.0.1 OPTIONS www.vue-admin-thinkphp.com/index.php/admin/permission/permissionMenuNodes
+[运行时间：0.052057s] [吞吐率：19.21req/s] [内存消耗：1,740.95kb] [文件加载：41]
+[ info ] [ LANG ] D:\PHP\git\vue-admin-thinkphp\vueadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'permission',
+    2 => 'permissionMenuNodes',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.vue-admin-thinkphp.com',
+  'connection' => 'keep-alive',
+  'access-control-request-method' => 'GET',
+  'origin' => 'http://localhost:9090',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'access-control-request-headers' => 'x-token',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-02T11:57:04+08:00 ] 127.0.0.1 OPTIONS www.vue-admin-thinkphp.com/index.php/admin/permission/permissionSrcNodes
+[运行时间：0.055096s] [吞吐率：18.15req/s] [内存消耗：1,740.97kb] [文件加载：41]
+[ info ] [ LANG ] D:\PHP\git\vue-admin-thinkphp\vueadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'permission',
+    2 => 'permissionSrcNodes',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.vue-admin-thinkphp.com',
+  'connection' => 'keep-alive',
+  'access-control-request-method' => 'GET',
+  'origin' => 'http://localhost:9090',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'access-control-request-headers' => 'x-token',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-02T11:57:04+08:00 ] 127.0.0.1 GET www.vue-admin-thinkphp.com/index.php/admin/permission/permissionSrcNodes
+[运行时间：0.078005s] [吞吐率：12.82req/s] [内存消耗：2,570.63kb] [文件加载：48]
+[ info ] [ LANG ] D:\PHP\git\vue-admin-thinkphp\vueadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'permission',
+    2 => 'permissionSrcNodes',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.vue-admin-thinkphp.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:9090',
+  'x-token' => 't8fdad26ac86f667380fe52b6afaf46da',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://localhost:9090/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Permission->permissionSrcNodes[ D:\PHP\git\vue-admin-thinkphp\vueadmin\application\admin\controller\Permission.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000688s ] mysql:host=127.0.0.1;port=3306;dbname=vueadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_admin` [ RunTime:0.025797s ]
+[ sql ] [ SQL ] SELECT `expire_time`,`id`,`token` FROM `vue_admin` WHERE  `token` = '8fdad26ac86f667380fe52b6afaf46da' LIMIT 1 [ RunTime:0.000300s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_permission_src` [ RunTime:0.024935s ]
+[ sql ] [ SQL ] SELECT * FROM `vue_permission_src` WHERE  `permission_code` <> '' [ RunTime:0.000620s ]
+[ sql ] [ SQL ] SELECT * FROM `vue_permission_src` [ RunTime:0.000635s ]
+---------------------------------------------------------------
+[ 2018-11-02T11:57:04+08:00 ] 127.0.0.1 GET www.vue-admin-thinkphp.com/index.php/admin/permission/permissionMenuNodes
+[运行时间：0.098682s] [吞吐率：10.13req/s] [内存消耗：2,593.14kb] [文件加载：48]
+[ info ] [ LANG ] D:\PHP\git\vue-admin-thinkphp\vueadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'permission',
+    2 => 'permissionMenuNodes',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.vue-admin-thinkphp.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:9090',
+  'x-token' => 't8fdad26ac86f667380fe52b6afaf46da',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://localhost:9090/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Permission->permissionMenuNodes[ D:\PHP\git\vue-admin-thinkphp\vueadmin\application\admin\controller\Permission.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000491s ] mysql:host=127.0.0.1;port=3306;dbname=vueadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_admin` [ RunTime:0.030982s ]
+[ sql ] [ SQL ] SELECT `expire_time`,`id`,`token` FROM `vue_admin` WHERE  `token` = '8fdad26ac86f667380fe52b6afaf46da' LIMIT 1 [ RunTime:0.000582s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_permission_src` [ RunTime:0.024127s ]
+[ sql ] [ SQL ] SELECT * FROM `vue_permission_src` WHERE  `permission_code` <> '' [ RunTime:0.000371s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_permission_menu` [ RunTime:0.016409s ]
+[ sql ] [ SQL ] SELECT * FROM `vue_permission_menu` [ RunTime:0.000370s ]
+---------------------------------------------------------------
+[ 2018-11-02T11:57:06+08:00 ] 127.0.0.1 GET www.vue-admin-thinkphp.com/index.php/admin/permission/permissionSrcLst
+[运行时间：0.072571s] [吞吐率：13.78req/s] [内存消耗：2,581.37kb] [文件加载：48]
+[ info ] [ LANG ] D:\PHP\git\vue-admin-thinkphp\vueadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'permission',
+    2 => 'permissionSrcLst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.vue-admin-thinkphp.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:9090',
+  'x-token' => 't8fdad26ac86f667380fe52b6afaf46da',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://localhost:9090/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Permission->permissionSrcLst[ D:\PHP\git\vue-admin-thinkphp\vueadmin\application\admin\controller\Permission.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000573s ] mysql:host=127.0.0.1;port=3306;dbname=vueadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_admin` [ RunTime:0.020839s ]
+[ sql ] [ SQL ] SELECT `expire_time`,`id`,`token` FROM `vue_admin` WHERE  `token` = '8fdad26ac86f667380fe52b6afaf46da' LIMIT 1 [ RunTime:0.000332s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_permission_src` [ RunTime:0.019053s ]
+[ sql ] [ SQL ] SELECT * FROM `vue_permission_src` WHERE  `permission_code` <> '' [ RunTime:0.000336s ]
+[ sql ] [ SQL ] SELECT * FROM `vue_permission_src` [ RunTime:0.000265s ]
+---------------------------------------------------------------
+[ 2018-11-02T11:57:07+08:00 ] 127.0.0.1 OPTIONS www.vue-admin-thinkphp.com/index.php/admin/permission/permissionControllerOptions
+[运行时间：0.025179s] [吞吐率：39.72req/s] [内存消耗：1,740.98kb] [文件加载：41]
+[ info ] [ LANG ] D:\PHP\git\vue-admin-thinkphp\vueadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'permission',
+    2 => 'permissionControllerOptions',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.vue-admin-thinkphp.com',
+  'connection' => 'keep-alive',
+  'access-control-request-method' => 'GET',
+  'origin' => 'http://localhost:9090',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'access-control-request-headers' => 'x-token',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-02T11:57:07+08:00 ] 127.0.0.1 GET www.vue-admin-thinkphp.com/index.php/admin/permission/permissionSrcOptions
+[运行时间：0.079173s] [吞吐率：12.63req/s] [内存消耗：2,557.69kb] [文件加载：48]
+[ info ] [ LANG ] D:\PHP\git\vue-admin-thinkphp\vueadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'permission',
+    2 => 'permissionSrcOptions',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.vue-admin-thinkphp.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:9090',
+  'x-token' => 't8fdad26ac86f667380fe52b6afaf46da',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://localhost:9090/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Permission->permissionSrcOptions[ D:\PHP\git\vue-admin-thinkphp\vueadmin\application\admin\controller\Permission.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000544s ] mysql:host=127.0.0.1;port=3306;dbname=vueadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_admin` [ RunTime:0.025587s ]
+[ sql ] [ SQL ] SELECT `expire_time`,`id`,`token` FROM `vue_admin` WHERE  `token` = '8fdad26ac86f667380fe52b6afaf46da' LIMIT 1 [ RunTime:0.000404s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_permission_src` [ RunTime:0.027018s ]
+[ sql ] [ SQL ] SELECT * FROM `vue_permission_src` WHERE  `permission_code` <> '' [ RunTime:0.000599s ]
+[ sql ] [ SQL ] SELECT * FROM `vue_permission_src` WHERE  `permission_code` = '' [ RunTime:0.000510s ]
+---------------------------------------------------------------
+[ 2018-11-02T11:57:07+08:00 ] 127.0.0.1 GET www.vue-admin-thinkphp.com/index.php/admin/permission/permissionControllerOptions
+[运行时间：0.086322s] [吞吐率：11.58req/s] [内存消耗：2,553.02kb] [文件加载：48]
+[ info ] [ LANG ] D:\PHP\git\vue-admin-thinkphp\vueadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'permission',
+    2 => 'permissionControllerOptions',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.vue-admin-thinkphp.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:9090',
+  'x-token' => 't8fdad26ac86f667380fe52b6afaf46da',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://localhost:9090/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Permission->permissionControllerOptions[ D:\PHP\git\vue-admin-thinkphp\vueadmin\application\admin\controller\Permission.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009582s ] mysql:host=127.0.0.1;port=3306;dbname=vueadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_admin` [ RunTime:0.026080s ]
+[ sql ] [ SQL ] SELECT `expire_time`,`id`,`token` FROM `vue_admin` WHERE  `token` = '8fdad26ac86f667380fe52b6afaf46da' LIMIT 1 [ RunTime:0.000451s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_permission_src` [ RunTime:0.026624s ]
+[ sql ] [ SQL ] SELECT * FROM `vue_permission_src` WHERE  `permission_code` <> '' [ RunTime:0.000381s ]
+---------------------------------------------------------------
+[ 2018-11-02T11:57:12+08:00 ] 127.0.0.1 OPTIONS www.vue-admin-thinkphp.com/index.php/admin/permission/permissionActionOptions?controller=Permission
+[运行时间：0.016186s] [吞吐率：61.78req/s] [内存消耗：1,741.30kb] [文件加载：41]
+[ info ] [ LANG ] D:\PHP\git\vue-admin-thinkphp\vueadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'permission',
+    2 => 'permissionActionOptions',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.vue-admin-thinkphp.com',
+  'connection' => 'keep-alive',
+  'access-control-request-method' => 'GET',
+  'origin' => 'http://localhost:9090',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'access-control-request-headers' => 'x-token',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'controller' => 'Permission',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-02T11:57:12+08:00 ] 127.0.0.1 GET www.vue-admin-thinkphp.com/index.php/admin/permission/permissionActionOptions?controller=Permission
+[运行时间：0.073882s] [吞吐率：13.54req/s] [内存消耗：2,565.49kb] [文件加载：48]
+[ info ] [ LANG ] D:\PHP\git\vue-admin-thinkphp\vueadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'permission',
+    2 => 'permissionActionOptions',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.vue-admin-thinkphp.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:9090',
+  'x-token' => 't8fdad26ac86f667380fe52b6afaf46da',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://localhost:9090/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'controller' => 'Permission',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Permission->permissionActionOptions[ D:\PHP\git\vue-admin-thinkphp\vueadmin\application\admin\controller\Permission.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010278s ] mysql:host=127.0.0.1;port=3306;dbname=vueadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_admin` [ RunTime:0.021058s ]
+[ sql ] [ SQL ] SELECT `expire_time`,`id`,`token` FROM `vue_admin` WHERE  `token` = '8fdad26ac86f667380fe52b6afaf46da' LIMIT 1 [ RunTime:0.000404s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_permission_src` [ RunTime:0.019143s ]
+[ sql ] [ SQL ] SELECT * FROM `vue_permission_src` WHERE  `permission_code` <> '' [ RunTime:0.000523s ]
+---------------------------------------------------------------
+[ 2018-11-02T11:57:14+08:00 ] 127.0.0.1 OPTIONS www.vue-admin-thinkphp.com/index.php/admin/permission/permissionActionOptions?controller=Test
+[运行时间：0.016151s] [吞吐率：61.91req/s] [内存消耗：1,741.28kb] [文件加载：41]
+[ info ] [ LANG ] D:\PHP\git\vue-admin-thinkphp\vueadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'permission',
+    2 => 'permissionActionOptions',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.vue-admin-thinkphp.com',
+  'connection' => 'keep-alive',
+  'access-control-request-method' => 'GET',
+  'origin' => 'http://localhost:9090',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'access-control-request-headers' => 'x-token',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'controller' => 'Test',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-02T11:57:15+08:00 ] 127.0.0.1 GET www.vue-admin-thinkphp.com/index.php/admin/permission/permissionActionOptions?controller=Test
+[运行时间：0.072147s] [吞吐率：13.86req/s] [内存消耗：2,568.12kb] [文件加载：50]
+[ info ] [ LANG ] D:\PHP\git\vue-admin-thinkphp\vueadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'permission',
+    2 => 'permissionActionOptions',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.vue-admin-thinkphp.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:9090',
+  'x-token' => 't8fdad26ac86f667380fe52b6afaf46da',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://localhost:9090/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'controller' => 'Test',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Permission->permissionActionOptions[ D:\PHP\git\vue-admin-thinkphp\vueadmin\application\admin\controller\Permission.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010065s ] mysql:host=127.0.0.1;port=3306;dbname=vueadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_admin` [ RunTime:0.020430s ]
+[ sql ] [ SQL ] SELECT `expire_time`,`id`,`token` FROM `vue_admin` WHERE  `token` = '8fdad26ac86f667380fe52b6afaf46da' LIMIT 1 [ RunTime:0.000297s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_permission_src` [ RunTime:0.018021s ]
+[ sql ] [ SQL ] SELECT * FROM `vue_permission_src` WHERE  `permission_code` <> '' [ RunTime:0.000436s ]
+---------------------------------------------------------------
+[ 2018-11-02T11:57:18+08:00 ] 127.0.0.1 GET www.vue-admin-thinkphp.com/index.php/admin/permission/permissionSrcLst
+[运行时间：0.089950s] [吞吐率：11.12req/s] [内存消耗：2,581.37kb] [文件加载：48]
+[ info ] [ LANG ] D:\PHP\git\vue-admin-thinkphp\vueadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'permission',
+    2 => 'permissionSrcLst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.vue-admin-thinkphp.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:9090',
+  'x-token' => 't8fdad26ac86f667380fe52b6afaf46da',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://localhost:9090/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Permission->permissionSrcLst[ D:\PHP\git\vue-admin-thinkphp\vueadmin\application\admin\controller\Permission.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000622s ] mysql:host=127.0.0.1;port=3306;dbname=vueadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_admin` [ RunTime:0.027363s ]
+[ sql ] [ SQL ] SELECT `expire_time`,`id`,`token` FROM `vue_admin` WHERE  `token` = '8fdad26ac86f667380fe52b6afaf46da' LIMIT 1 [ RunTime:0.000432s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_permission_src` [ RunTime:0.018910s ]
+[ sql ] [ SQL ] SELECT * FROM `vue_permission_src` WHERE  `permission_code` <> '' [ RunTime:0.000373s ]
+[ sql ] [ SQL ] SELECT * FROM `vue_permission_src` [ RunTime:0.000253s ]
+---------------------------------------------------------------
+[ 2018-11-02T11:57:19+08:00 ] 127.0.0.1 GET www.vue-admin-thinkphp.com/index.php/admin/permission/permissionSrcOptions
+[运行时间：0.089651s] [吞吐率：11.15req/s] [内存消耗：2,557.69kb] [文件加载：48]
+[ info ] [ LANG ] D:\PHP\git\vue-admin-thinkphp\vueadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'permission',
+    2 => 'permissionSrcOptions',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.vue-admin-thinkphp.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:9090',
+  'x-token' => 't8fdad26ac86f667380fe52b6afaf46da',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://localhost:9090/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Permission->permissionSrcOptions[ D:\PHP\git\vue-admin-thinkphp\vueadmin\application\admin\controller\Permission.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009749s ] mysql:host=127.0.0.1;port=3306;dbname=vueadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_admin` [ RunTime:0.027122s ]
+[ sql ] [ SQL ] SELECT `expire_time`,`id`,`token` FROM `vue_admin` WHERE  `token` = '8fdad26ac86f667380fe52b6afaf46da' LIMIT 1 [ RunTime:0.000388s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_permission_src` [ RunTime:0.026032s ]
+[ sql ] [ SQL ] SELECT * FROM `vue_permission_src` WHERE  `permission_code` <> '' [ RunTime:0.000377s ]
+[ sql ] [ SQL ] SELECT * FROM `vue_permission_src` WHERE  `permission_code` = '' [ RunTime:0.000269s ]
+---------------------------------------------------------------
+[ 2018-11-02T11:57:19+08:00 ] 127.0.0.1 GET www.vue-admin-thinkphp.com/index.php/admin/permission/permissionControllerOptions
+[运行时间：0.096898s] [吞吐率：10.32req/s] [内存消耗：2,553.02kb] [文件加载：48]
+[ info ] [ LANG ] D:\PHP\git\vue-admin-thinkphp\vueadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'permission',
+    2 => 'permissionControllerOptions',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.vue-admin-thinkphp.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:9090',
+  'x-token' => 't8fdad26ac86f667380fe52b6afaf46da',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://localhost:9090/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Permission->permissionControllerOptions[ D:\PHP\git\vue-admin-thinkphp\vueadmin\application\admin\controller\Permission.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009428s ] mysql:host=127.0.0.1;port=3306;dbname=vueadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_admin` [ RunTime:0.033482s ]
+[ sql ] [ SQL ] SELECT `expire_time`,`id`,`token` FROM `vue_admin` WHERE  `token` = '8fdad26ac86f667380fe52b6afaf46da' LIMIT 1 [ RunTime:0.000399s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_permission_src` [ RunTime:0.025144s ]
+[ sql ] [ SQL ] SELECT * FROM `vue_permission_src` WHERE  `permission_code` <> '' [ RunTime:0.000417s ]
+---------------------------------------------------------------
+[ 2018-11-02T11:57:21+08:00 ] 127.0.0.1 GET www.vue-admin-thinkphp.com/index.php/admin/permission/permissionMenuLst
+[运行时间：0.093052s] [吞吐率：10.75req/s] [内存消耗：2,608.38kb] [文件加载：48]
+[ info ] [ LANG ] D:\PHP\git\vue-admin-thinkphp\vueadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'permission',
+    2 => 'permissionMenuLst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.vue-admin-thinkphp.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:9090',
+  'x-token' => 't8fdad26ac86f667380fe52b6afaf46da',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://localhost:9090/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Permission->permissionMenuLst[ D:\PHP\git\vue-admin-thinkphp\vueadmin\application\admin\controller\Permission.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000573s ] mysql:host=127.0.0.1;port=3306;dbname=vueadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_admin` [ RunTime:0.020505s ]
+[ sql ] [ SQL ] SELECT `expire_time`,`id`,`token` FROM `vue_admin` WHERE  `token` = '8fdad26ac86f667380fe52b6afaf46da' LIMIT 1 [ RunTime:0.000330s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_permission_src` [ RunTime:0.017551s ]
+[ sql ] [ SQL ] SELECT * FROM `vue_permission_src` WHERE  `permission_code` <> '' [ RunTime:0.000368s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_permission_menu` [ RunTime:0.016234s ]
+[ sql ] [ SQL ] SELECT * FROM `vue_permission_menu` [ RunTime:0.000382s ]
+---------------------------------------------------------------
+[ 2018-11-02T11:57:22+08:00 ] 127.0.0.1 GET www.vue-admin-thinkphp.com/index.php/admin/permission/permissionRoleLst?page=1&total=0&pageSize=10&role_name=
+[运行时间：0.112706s] [吞吐率：8.87req/s] [内存消耗：2,703.53kb] [文件加载：52]
+[ info ] [ LANG ] D:\PHP\git\vue-admin-thinkphp\vueadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'permission',
+    2 => 'permissionRoleLst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.vue-admin-thinkphp.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:9090',
+  'x-token' => 't8fdad26ac86f667380fe52b6afaf46da',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://localhost:9090/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'total' => '0',
+  'pageSize' => '10',
+  'role_name' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Permission->permissionRoleLst[ D:\PHP\git\vue-admin-thinkphp\vueadmin\application\admin\controller\Permission.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009626s ] mysql:host=127.0.0.1;port=3306;dbname=vueadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_admin` [ RunTime:0.021473s ]
+[ sql ] [ SQL ] SELECT `expire_time`,`id`,`token` FROM `vue_admin` WHERE  `token` = '8fdad26ac86f667380fe52b6afaf46da' LIMIT 1 [ RunTime:0.000313s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_permission_src` [ RunTime:0.017956s ]
+[ sql ] [ SQL ] SELECT * FROM `vue_permission_src` WHERE  `permission_code` <> '' [ RunTime:0.000384s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_permission_role` [ RunTime:0.018178s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `vue_permission_role` LIMIT 1 [ RunTime:0.000480s ]
+[ sql ] [ SQL ] SELECT * FROM `vue_permission_role` LIMIT 0,10 [ RunTime:0.000452s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_permission_menu` [ RunTime:0.016079s ]
+[ sql ] [ SQL ] SELECT `title` FROM `vue_permission_menu` WHERE  `id` IN (1,3,2,24,25,26,27,8,9,10,15,17,18,19,20,28,29,30,31) [ RunTime:0.000410s ]
+[ sql ] [ SQL ] SELECT `title` FROM `vue_permission_menu` WHERE  `id` IN (1,3) [ RunTime:0.000272s ]
+[ sql ] [ SQL ] SELECT `title` FROM `vue_permission_menu` WHERE  `id` IN (2,24,25,26,27,8,9,10,15,17,18,19,20,28,29,30,31) [ RunTime:0.000284s ]
+---------------------------------------------------------------
+[ 2018-11-02T11:57:22+08:00 ] 127.0.0.1 GET www.vue-admin-thinkphp.com/index.php/admin/permission/adminLst?page=1&total=0&pageSize=10&username=
+[运行时间：0.109517s] [吞吐率：9.13req/s] [内存消耗：2,681.38kb] [文件加载：52]
+[ info ] [ LANG ] D:\PHP\git\vue-admin-thinkphp\vueadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'permission',
+    2 => 'adminLst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.vue-admin-thinkphp.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:9090',
+  'x-token' => 't8fdad26ac86f667380fe52b6afaf46da',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://localhost:9090/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'total' => '0',
+  'pageSize' => '10',
+  'username' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Permission->adminLst[ D:\PHP\git\vue-admin-thinkphp\vueadmin\application\admin\controller\Permission.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010752s ] mysql:host=127.0.0.1;port=3306;dbname=vueadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_admin` [ RunTime:0.014928s ]
+[ sql ] [ SQL ] SELECT `expire_time`,`id`,`token` FROM `vue_admin` WHERE  `token` = '8fdad26ac86f667380fe52b6afaf46da' LIMIT 1 [ RunTime:0.000399s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_permission_src` [ RunTime:0.014574s ]
+[ sql ] [ SQL ] SELECT * FROM `vue_permission_src` WHERE  `permission_code` <> '' [ RunTime:0.001013s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `vue_admin` LIMIT 1 [ RunTime:0.000309s ]
+[ sql ] [ SQL ] SELECT `id`,`role_ids`,`username` FROM `vue_admin` LIMIT 0,10 [ RunTime:0.000286s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_permission_role` [ RunTime:0.014516s ]
+[ sql ] [ SQL ] SELECT `role_name` FROM `vue_permission_role` WHERE  `id` IN (4,9) [ RunTime:0.000452s ]
+[ sql ] [ SQL ] SELECT `role_name` FROM `vue_permission_role` WHERE  `id` IN (3) [ RunTime:0.000255s ]
+---------------------------------------------------------------
+[ 2018-11-02T13:50:28+08:00 ] 127.0.0.1 OPTIONS www.vue-admin-thinkphp.com/index.php/admin/uc/info
+[运行时间：0.021658s] [吞吐率：46.17req/s] [内存消耗：1,588.02kb] [文件加载：41]
+[ info ] [ LANG ] D:\PHP\git\vue-admin-thinkphp\vueadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'uc',
+    2 => 'info',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.vue-admin-thinkphp.com',
+  'connection' => 'keep-alive',
+  'access-control-request-method' => 'GET',
+  'origin' => 'http://localhost:9090',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'access-control-request-headers' => 'x-token',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-02T13:50:28+08:00 ] 127.0.0.1 GET www.vue-admin-thinkphp.com/index.php/admin/uc/info
+[运行时间：0.067442s] [吞吐率：14.83req/s] [内存消耗：2,399.64kb] [文件加载：48]
+[ info ] [ LANG ] D:\PHP\git\vue-admin-thinkphp\vueadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'uc',
+    2 => 'info',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.vue-admin-thinkphp.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:9090',
+  'x-token' => 't8fdad26ac86f667380fe52b6afaf46da',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://localhost:9090/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Uc->info[ D:\PHP\git\vue-admin-thinkphp\vueadmin\application\admin\controller\Uc.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001505s ] mysql:host=127.0.0.1;port=3306;dbname=vueadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_admin` [ RunTime:0.021023s ]
+[ sql ] [ SQL ] SELECT `expire_time`,`id`,`token` FROM `vue_admin` WHERE  `token` = '8fdad26ac86f667380fe52b6afaf46da' LIMIT 1 [ RunTime:0.000331s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_permission_src` [ RunTime:0.018324s ]
+[ sql ] [ SQL ] SELECT * FROM `vue_permission_src` WHERE  `permission_code` <> '' [ RunTime:0.000503s ]
+[ sql ] [ SQL ] SELECT * FROM `vue_admin` WHERE  `token` = '8fdad26ac86f667380fe52b6afaf46da' LIMIT 1 [ RunTime:0.000317s ]
+---------------------------------------------------------------
+[ 2018-11-02T13:50:28+08:00 ] 127.0.0.1 OPTIONS www.vue-admin-thinkphp.com/index.php/admin/uc/getPermissionRouter?roles[]=3
+[运行时间：0.021966s] [吞吐率：45.52req/s] [内存消耗：1,588.45kb] [文件加载：41]
+[ info ] [ LANG ] D:\PHP\git\vue-admin-thinkphp\vueadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'uc',
+    2 => 'getPermissionRouter',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.vue-admin-thinkphp.com',
+  'connection' => 'keep-alive',
+  'access-control-request-method' => 'POST',
+  'origin' => 'http://localhost:9090',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'access-control-request-headers' => 'x-token',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'roles' => 
+  array (
+    0 => '3',
+  ),
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-02T13:50:29+08:00 ] 127.0.0.1 POST www.vue-admin-thinkphp.com/index.php/admin/uc/getPermissionRouter?roles[]=3
+[运行时间：0.115696s] [吞吐率：8.64req/s] [内存消耗：2,471.95kb] [文件加载：48]
+[ info ] [ LANG ] D:\PHP\git\vue-admin-thinkphp\vueadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'uc',
+    2 => 'getPermissionRouter',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.vue-admin-thinkphp.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:9090',
+  'x-token' => 't8fdad26ac86f667380fe52b6afaf46da',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://localhost:9090/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'roles' => 
+  array (
+    0 => '3',
+  ),
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Uc->getPermissionRouter[ D:\PHP\git\vue-admin-thinkphp\vueadmin\application\admin\controller\Uc.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010088s ] mysql:host=127.0.0.1;port=3306;dbname=vueadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_admin` [ RunTime:0.021448s ]
+[ sql ] [ SQL ] SELECT `expire_time`,`id`,`token` FROM `vue_admin` WHERE  `token` = '8fdad26ac86f667380fe52b6afaf46da' LIMIT 1 [ RunTime:0.000336s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_permission_src` [ RunTime:0.016253s ]
+[ sql ] [ SQL ] SELECT * FROM `vue_permission_src` WHERE  `permission_code` <> '' [ RunTime:0.000331s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_permission_role` [ RunTime:0.018286s ]
+[ sql ] [ SQL ] SELECT * FROM `vue_permission_role` WHERE  `id` IN (3) [ RunTime:0.000433s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_permission_menu` [ RunTime:0.015688s ]
+[ sql ] [ SQL ] SELECT * FROM `vue_permission_menu` WHERE  `id` IN (1,3,2,24,25,26,27,8,9,10,15,17,18,19,20,28,29,30,31) [ RunTime:0.000468s ]
+---------------------------------------------------------------
+[ 2018-11-02T13:50:31+08:00 ] 127.0.0.1 OPTIONS www.vue-admin-thinkphp.com/index.php/admin/permission/permissionSrcLst
+[运行时间：0.026938s] [吞吐率：37.12req/s] [内存消耗：1,740.91kb] [文件加载：41]
+[ info ] [ LANG ] D:\PHP\git\vue-admin-thinkphp\vueadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'permission',
+    2 => 'permissionSrcLst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.vue-admin-thinkphp.com',
+  'connection' => 'keep-alive',
+  'access-control-request-method' => 'GET',
+  'origin' => 'http://localhost:9090',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'access-control-request-headers' => 'x-token',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-02T13:50:31+08:00 ] 127.0.0.1 GET www.vue-admin-thinkphp.com/index.php/admin/permission/permissionSrcLst
+[运行时间：0.075449s] [吞吐率：13.25req/s] [内存消耗：2,581.37kb] [文件加载：48]
+[ info ] [ LANG ] D:\PHP\git\vue-admin-thinkphp\vueadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'permission',
+    2 => 'permissionSrcLst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.vue-admin-thinkphp.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:9090',
+  'x-token' => 't8fdad26ac86f667380fe52b6afaf46da',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://localhost:9090/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Permission->permissionSrcLst[ D:\PHP\git\vue-admin-thinkphp\vueadmin\application\admin\controller\Permission.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010476s ] mysql:host=127.0.0.1;port=3306;dbname=vueadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_admin` [ RunTime:0.021449s ]
+[ sql ] [ SQL ] SELECT `expire_time`,`id`,`token` FROM `vue_admin` WHERE  `token` = '8fdad26ac86f667380fe52b6afaf46da' LIMIT 1 [ RunTime:0.000275s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_permission_src` [ RunTime:0.017056s ]
+[ sql ] [ SQL ] SELECT * FROM `vue_permission_src` WHERE  `permission_code` <> '' [ RunTime:0.000354s ]
+[ sql ] [ SQL ] SELECT * FROM `vue_permission_src` [ RunTime:0.000298s ]
+---------------------------------------------------------------
+[ 2018-11-02T13:54:06+08:00 ] 127.0.0.1 OPTIONS www.vue-admin-thinkphp.com/index.php/admin/permission/adminLst?page=1&total=0&pageSize=10&username=
+[运行时间：0.020167s] [吞吐率：49.59req/s] [内存消耗：1,741.75kb] [文件加载：41]
+[ info ] [ LANG ] D:\PHP\git\vue-admin-thinkphp\vueadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'permission',
+    2 => 'adminLst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.vue-admin-thinkphp.com',
+  'connection' => 'keep-alive',
+  'access-control-request-method' => 'GET',
+  'origin' => 'http://localhost:9090',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'access-control-request-headers' => 'x-token',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'total' => '0',
+  'pageSize' => '10',
+  'username' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-02T13:54:06+08:00 ] 127.0.0.1 GET www.vue-admin-thinkphp.com/index.php/admin/permission/adminLst?page=1&total=0&pageSize=10&username=
+[运行时间：0.094715s] [吞吐率：10.56req/s] [内存消耗：2,681.38kb] [文件加载：52]
+[ info ] [ LANG ] D:\PHP\git\vue-admin-thinkphp\vueadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'permission',
+    2 => 'adminLst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.vue-admin-thinkphp.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:9090',
+  'x-token' => 't8fdad26ac86f667380fe52b6afaf46da',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'referer' => 'http://localhost:9090/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'total' => '0',
+  'pageSize' => '10',
+  'username' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Permission->adminLst[ D:\PHP\git\vue-admin-thinkphp\vueadmin\application\admin\controller\Permission.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010510s ] mysql:host=127.0.0.1;port=3306;dbname=vueadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_admin` [ RunTime:0.019411s ]
+[ sql ] [ SQL ] SELECT `expire_time`,`id`,`token` FROM `vue_admin` WHERE  `token` = '8fdad26ac86f667380fe52b6afaf46da' LIMIT 1 [ RunTime:0.000464s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_permission_src` [ RunTime:0.017479s ]
+[ sql ] [ SQL ] SELECT * FROM `vue_permission_src` WHERE  `permission_code` <> '' [ RunTime:0.000331s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `vue_admin` LIMIT 1 [ RunTime:0.000213s ]
+[ sql ] [ SQL ] SELECT `id`,`role_ids`,`username` FROM `vue_admin` LIMIT 0,10 [ RunTime:0.000230s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `vue_permission_role` [ RunTime:0.016125s ]
+[ sql ] [ SQL ] SELECT `role_name` FROM `vue_permission_role` WHERE  `id` IN (4,9) [ RunTime:0.000367s ]
+[ sql ] [ SQL ] SELECT `role_name` FROM `vue_permission_role` WHERE  `id` IN (3) [ RunTime:0.000296s ]

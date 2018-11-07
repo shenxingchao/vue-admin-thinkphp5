@@ -96,7 +96,7 @@ export default {
   },
   methods: {
     getOptions() {
-      permissionMenuOptions().then(res => {
+      permissionMenuOptions({ id: this.ruleForm.id }).then(res => {
         this.options = this.options.concat(res.data)
       }).catch(() => {
 

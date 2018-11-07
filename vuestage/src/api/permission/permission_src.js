@@ -15,10 +15,11 @@ export function permissionActionOptions(params) {
   })
 }
 
-export function permissionSrcOptions() {
+export function permissionSrcOptions(params) {
   return request({
     url: '/permission/permissionSrcOptions',
-    method: 'get'
+    method: 'get',
+    params: params
   })
 }
 

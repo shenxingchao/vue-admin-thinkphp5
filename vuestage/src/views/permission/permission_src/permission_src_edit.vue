@@ -132,7 +132,7 @@ export default {
   },
   methods: {
     getOptions() {
-      permissionSrcOptions().then(res => {
+      permissionSrcOptions({ id: this.ruleForm.id }).then(res => {
         this.options = this.options.concat(res.data)
       }).catch(() => {
       })

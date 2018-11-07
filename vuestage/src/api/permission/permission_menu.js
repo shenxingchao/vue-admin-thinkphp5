@@ -8,10 +8,11 @@ export function permissionMenuAdd(ruleForm) {
   })
 }
 
-export function permissionMenuOptions() {
+export function permissionMenuOptions(params) {
   return request({
     url: '/permission/permissionMenuOptions',
-    method: 'get'
+    method: 'get',
+    params: params
   })
 }
 

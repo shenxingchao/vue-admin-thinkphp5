@@ -84,7 +84,11 @@ class Permission extends BaseOauthController {
         $msg = 'SUCCESS';
         try{
             $param = $request->param();
-            $permissionSrc = Db::name('permission_src')->where(array('permission_code'=>array('eq','')))->select();
+            $where = [];
+            $where['permission_code'] = ['eq',''];
+            if(isset($param['id']))
+                $where['id'] = ['neq',$param['id']];
+            $permissionSrc = Db::name('permission_src')->where($where)->select();
             $permissionOptions = $this->getTree($permissionSrc);
             $data = $permissionOptions;
         }catch (Exception $e){
@@ -296,7 +300,10 @@ class Permission extends BaseOauthController {
         $msg = 'SUCCESS';
         try{
             $param = $request->param();
-            $permissionMenu = Db::name('permission_menu')->select();
+            $where  = [];
+            if(isset($param['id']))
+                $where['id'] = ['neq',$param['id']];
+            $permissionMenu = Db::name('permission_menu')->where($where)->select();
             $menuOptions = $this->getTree($permissionMenu);
             $data = $menuOptions;
         }catch (Exception $e){
