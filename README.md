@@ -1,6 +1,6 @@
 # vue-admin-thinkphp 是基于vue-admin-template+thinkphp5的后台权限管理系统
 ## 视频演示
-链接：[点我查看演示视频](http://www.o8o8o8.com/vue/demo.html)
+链接：[点我查看演示视频](http://demo.o8o8o8.com/vue/vueAdminTemplate/index.html)
 
 ## 目录介绍
 1.vuestage  前端项目文件<br>
